@@ -17,5 +17,7 @@ public class Main {
 
 		System.out.println(myTaco.ShowTacoCost());
 		System.out.println(yourTaco.ShowTacoCost());
+        
+        System.out.println(myTaco.LogTime());
 	}
 }

@@ -1,6 +1,8 @@
 package testProject;
 
 import java.util.*;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class Taco {
 	Map<String, Number> toppings = new HashMap<String, Number>();
@@ -44,4 +46,10 @@ public class Taco {
 		}
 		return totalCost;
 	}
+    
+    public String LogTime(){
+        Calendar cal = Calendar.getInstance();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        return "Taco made fresh at: " + dateFormat.format(cal.getTime());
+    }
 }
