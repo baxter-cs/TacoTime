@@ -1,7 +1,7 @@
 package testProject;
 
 public class Main {
-	static public void main(String[] args){
+	public static void main(String[] args){
 		Taco myTaco = new Taco();
 		Taco yourTaco = new Taco();
 
