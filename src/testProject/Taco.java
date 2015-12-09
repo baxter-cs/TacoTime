@@ -46,6 +46,7 @@ public class Taco {
 		return totalCost;
 	}
     
+	// Wil Added this
     public String LogTime(){
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
