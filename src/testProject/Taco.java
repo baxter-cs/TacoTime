@@ -4,8 +4,6 @@ import java.util.*;
 import java.text.SimpleDateFormat;
 
 public class Taco {
-	
-	
 	Map<String, Number> toppings = new HashMap<String, Number>();
 	
 	
@@ -13,7 +11,6 @@ public class Taco {
 		toppings.put(toppingName, cost);
 	}
 
-	
 	public void RemoveTopping(String toppingName) {
 		toppings.remove(toppingName);
 	}
@@ -30,7 +27,6 @@ public class Taco {
 		
 	}
 	
-	
 	public String ShowToppings() {
 		String outString = "";
 		for (String topping : toppings.keySet()){
@@ -41,8 +37,6 @@ public class Taco {
 		}
 		return outString;
 	}
-	
-	
 	public float ShowTacoCost() {
 		float totalCost = 0f;
 		
@@ -52,12 +46,15 @@ public class Taco {
 		return totalCost;
 	}
     
+	// This is a comment which was not previously there
+	
+	public String Talk() {
+		return "I'm a talking taco";
+	}
 	
     public String LogTime(){
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        return "Taco made fresh at: " + dateFormat.format(cal.getTime()) + "with some possible human bits thrown in.";
+        return "Taco made fresh at: " + dateFormat.format(cal.getTime());
     }
-    
-    
 }
