@@ -46,7 +46,12 @@ public class Taco {
 		return totalCost;
 	}
     
-	// Wil Added this
+	// This is a comment which was not previously there
+	
+	public String Talk() {
+		return "I'm a talking taco";
+	}
+	
     public String LogTime(){
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
