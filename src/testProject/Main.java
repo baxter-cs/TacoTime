@@ -14,6 +14,8 @@ public class Main {
 
 		yourTaco = myTaco.Clone();
 		yourTaco.RemoveTopping("hot sauce");
+		
+		yourTaco.RemoveTopping("lettuce");
 
 		System.out.println(myTaco.ShowTacoCost());
 		System.out.println(yourTaco.ShowTacoCost());
