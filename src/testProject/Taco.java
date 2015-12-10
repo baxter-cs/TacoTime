@@ -74,7 +74,7 @@ public class Taco {
     public String LogTime(){
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        return "Taco made fresh at: " + dateFormat.format(cal.getTime());
+        return "Taco made fresh at: " + dateFormat.format(cal.getTime()) + "with some possible human bits thrown in.";
     }
     
     
