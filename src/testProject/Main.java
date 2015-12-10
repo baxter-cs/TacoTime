@@ -12,6 +12,7 @@ public class Main {
 		myTaco.AddTopping("hot sauce", 0.10f);
 		thisisaTaco.AddTopping("cheese", 1.20f);
 
+		thisisaTaco.RemoveTopping("cheese");
 		yourTaco = myTaco.Clone();
 		yourTaco.RemoveTopping("hot sauce");
 
