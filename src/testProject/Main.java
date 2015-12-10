@@ -6,10 +6,10 @@ public class Main {
 		Taco yourTaco = new Taco();
 
 		
-		myTaco.AddTopping("lettuce", 0.10f);
-		myTaco.AddTopping("meat", 1.00f);
-		//myTaco.AddTopping("cheese");
-		myTaco.AddTopping("hot sauce", 0.10f);
+		myTaco.AddTopping("lettuce");
+		myTaco.AddTopping("meat");
+		myTaco.AddTopping("cheese");
+		myTaco.AddTopping("hot sauce");
 		
 
 		yourTaco = myTaco.Clone();

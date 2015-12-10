@@ -7,9 +7,27 @@ public class Taco {
 	Map<String, Number> toppings = new HashMap<String, Number>();
 	
 	
-	public void AddTopping(String toppingName, float cost) {
+	public void AddTopping(String toppingName) {
+		float cost = 0.00f;
+		switch (toppingName) {
+			case "lettuce":
+				cost = 0.10f;
+				break;
+			case "meat":
+				cost = 1.00f;
+				break;
+			case "cheese":
+				cost = 1.20f;
+				break;
+			case "hot sauce":
+				cost = 0.10f;
+				break;
+			default:
+				cost = 12.34f;
+				break;
+		}
 		toppings.put(toppingName, cost);
-	}
+ 	}		 	
 
 	public void RemoveTopping(String toppingName) {
 		toppings.remove(toppingName);
@@ -20,7 +38,7 @@ public class Taco {
 		Taco outTaco = new Taco();
 		
 		for(String topping: toppings.keySet()){
-			outTaco.AddTopping(topping, (float) toppings.get(topping));
+			outTaco.AddTopping(topping);
 		}
 		
 		return outTaco;
